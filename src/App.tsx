@@ -5,6 +5,7 @@ import ShoppingCard from "./components/shoppingCard";
 import { HookCom } from "./components/hookCom";
 import { createContext, useContext } from "react";
 import { appContext } from "./state/appStateProvider";
+import { Grid } from "./components/grid";
 
 const contextData = {
   // 需要传递的数据
@@ -31,6 +32,8 @@ function App() {
         {/* value中就是传递的数据 */}
         <HookCom />
       </theContext.Provider>
+      <hr />
+      <Grid />
     </>
   );
 }
